@@ -3,7 +3,7 @@
   "name": "Bridge Heat",
   "version": "1.0.0",
   "config_flow": true,
-  "dependencies": [],
+  "dependencies": ["recorder"],
   "documentation" : "https://github.com/labgeea/bridge-heat",
   "issue-tracker" : "https://github.com/labgeea/bridge-heat/issues",
   "codeowners": ["@labgeea", "@kenzo-bento"]
