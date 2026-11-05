@@ -27,12 +27,23 @@ A Home Assistant Integration that collects environmental sensor data, with user-
 
 
     
-## Data Collected
-- Temperature, Pressure, and Humidity Data
-- Light, Noise, and Air Quality Data
-- Energy and HVAC Data
+## Credentials and data sharing
 
-Specifically, the state and attributes of the entities are collected.
+Obtain an API credential from the research operator and enter it during setup.
+After upgrading an existing installation, use **Configure / Options** to set a
+replacement credential. The formerly embedded shared key needs external revocation
+and rotation. Protect Home Assistant configuration files and backups.
+
+Only enabled temperature, humidity, pressure, and optional air-quality state changes
+are shared, with entity IDs, timestamps, and measurement class/unit metadata.
+Precise Home Assistant location is shared by default for research compatibility;
+you can disable it in setup or Options. Entity names may disclose room names.
+Recorder history is not guaranteed periodic sampling.
+
+Read the [change briefing and migration requirements](CHANGE_BRIEFING.md) before
+upgrading. In particular, coordinate the new installation identity with the research
+operator. Recovery depends on Recorder retention and backend acceptance; duplicate
+or missing records remain possible without backend support.
 
 ## Acknowledgements
 

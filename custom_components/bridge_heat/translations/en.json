@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Bridge Heat research sharing",
+        "description": "Enter a credential supplied by the research operator. Entity names and enabled measurements are shared. Review precise location consent.",
+        "data": {
+          "api_key": "API credential (leave blank to retain in options)",
+          "Temperature": "Share temperature",
+          "Humidity": "Share humidity",
+          "Pressure": "Share pressure",
+          "Air Quality": "Share air quality",
+          "share_location": "Share precise Home Assistant location"
+        }
+      }
+    },
+    "error": {
+      "credential_required": "Enter an API credential."
+    }
+  },
+  "options": {
+    "step": {
+      "options": {
+        "title": "Research sharing permissions",
+        "description": "A blank credential keeps the existing credential. Changes reload the integration and also apply to buffered samples.",
+        "data": {
+          "api_key": "API credential (leave blank to retain in options)",
+          "Temperature": "Share temperature",
+          "Humidity": "Share humidity",
+          "Pressure": "Share pressure",
+          "Air Quality": "Share air quality",
+          "share_location": "Share precise Home Assistant location"
+        }
+      }
+    }
+  }
+}
